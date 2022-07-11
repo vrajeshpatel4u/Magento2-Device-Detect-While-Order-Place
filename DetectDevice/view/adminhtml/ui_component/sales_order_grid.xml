@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="sales_order_columns">
+        <settings>
+            <childDefaults>
+                <param name="fieldAction" xsi:type="array">
+                    <item name="provider" xsi:type="string">false</item>
+                </param>
+            </childDefaults>
+        </settings>
+        <column name="device" class="V4U\DetectDevice\Ui\Component\Listing\Column\DetectDevice">
+            <settings>
+                <filter>select</filter>
+                <sortable>false</sortable>
+                <options class="V4U\DetectDevice\Model\Source\DetectDevice"/>
+                <dataType>select</dataType>
+                <label translate="true">Device</label>
+            </settings>
+        </column>        
+    </columns>
+</listing>

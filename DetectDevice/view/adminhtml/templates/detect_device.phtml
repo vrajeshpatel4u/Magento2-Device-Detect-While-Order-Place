@@ -1,0 +1,15 @@
+<?php $order = $block->getOrder(); ?>
+	<?php if($order->getDevice()): ?>   
+		<fieldset class="admin__fieldset">
+		    <div class="admin__page-section">
+		        <div class="admin__page-section-title">
+		            <span class="title"><?= $block->escapeHtml(__('Additional Information')) ?></span>
+		        </div>
+		            <legend class="admin__legend">
+		            	<span><?= /* @escapeNotVerified */ __('Device Information :') ?>
+		            		<i><?= $order->getDevice(); ?></i>
+		            	</span>
+		            </legend>
+		    </div>            
+		</fieldset>
+	<?php endif; ?>
